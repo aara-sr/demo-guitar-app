@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guitar Tutor — Wireframes</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#111;--s1:#1c1c1e;--s2:#2c2c2e;--ln:#48484a;--tx:#f2f2f7;--mu:#8e8e93;--ac:#ff9f0a;--g:#30d158;--r:#ff453a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:13px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+.w{max-width:1100px;margin:0 auto;padding:18px 14px 30px}
+h1{font-size:16px;margin:0 0 4px}.sub{color:var(--mu);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:26px 18px;justify-items:center}
+figure{margin:0}figcaption{text-align:center;margin-top:8px;color:var(--mu);font-size:12px}
+.ph{width:240px;height:520px;border:2px solid var(--ln);border-radius:30px;background:#000;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:34px 12px 10px}
+.ph:before{content:"";position:absolute;top:8px;left:50%;width:70px;height:16px;margin-left:-35px;border-radius:9px;background:#222}
+.ph:after{content:"";position:absolute;bottom:5px;left:50%;width:70px;height:3px;margin-left:-35px;border-radius:2px;background:#555}
+.lt{font-size:22px;font-weight:700;margin:6px 0 10px}
+.card{background:var(--s1);border:1px solid var(--s2);border-radius:12px;padding:9px;margin-bottom:8px}
+.row{display:flex;align-items:center;gap:8px}.sp{justify-content:space-between}
+.btn{background:var(--ac);color:#000;font-weight:600;text-align:center;border-radius:20px;padding:10px;margin-top:auto;margin-bottom:8px}
+.box{background:var(--s2);border:1px dashed var(--ln);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:11px}
+.mu{color:var(--mu);font-size:11px}.b{font-weight:600}.c{text-align:center}
+.tab{margin-top:auto;display:flex;justify-content:space-around;border-top:1px solid var(--s2);padding:6px 0 8px;font-size:10px;color:var(--mu);margin-left:-12px;margin-right:-12px;background:#0c0c0d}
+.tab span{text-align:center}.tab .on{color:var(--ac)}
+.chip{border:1px solid var(--ln);border-radius:12px;padding:3px 7px;font-size:10px}
+.dot{width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#000}
+.pb{height:5px;background:var(--s2);border-radius:3px}.pb i{display:block;height:5px;background:var(--ac);border-radius:3px}
+.ring{width:56px;height:56px;border-radius:50%;border:6px solid var(--s2);border-top-color:var(--ac);display:flex;align-items:center;justify-content:center;font-size:11px}
+.chord{height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:26px;font-weight:700}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g2 .card{margin:0}
+</style></head><body><div class="w">
+<h1>Guitar Tutor — Screen-by-screen wireframes</h1>
+<p class="sub">Low-fidelity, dark iOS layout. Boxes are placeholders; icons are named, not drawn.</p>
+<div class="grid">
+
+<figure><div class="ph">
+<div class="box" style="width:70px;height:70px;margin:50px auto 14px;border-radius:18px">Logo</div>
+<div class="lt c">App Name</div>
+<div class="c">Brief description of the app</div>
+<div class="c mu" style="margin-top:6px">Sub description, one or two lines</div>
+<div class="btn">Get Started</div></div><figcaption>1. Get Started (first launch)</figcaption></figure>
+
+<figure><div class="ph">
+<div class="lt">Allow Access</div>
+<div class="card"><div class="row"><span>📷</span><div><div class="b">Camera</div><div class="mu">camera.fill · to see your guitar and hands</div></div></div></div>
+<div class="card"><div class="row"><span>🎙</span><div><div class="b">Microphone</div><div class="mu">mic.fill · to hear your chords</div></div></div></div>
+<div class="card mu">lock.fill Everything from your camera and microphone stays on your device. Nothing is used by us.</div>
+<div class="btn">Continue</div></div><figcaption>2. Permissions and privacy</figcaption></figure>
+
+<figure><div class="ph">
+<div class="lt">Practice</div>
+<div class="card row sp"><div class="row"><span>🎚</span><span class="b">Tune guitar?</span></div><span class="mu">✕ ›</span></div>
+<div class="b" style="margin:4px 0 6px">Choose a chord</div>
+<div class="g2"><div class="card chord">C<span class="mu" style="font-size:10px">diagram</span></div><div class="card chord">D<span class="mu" style="font-size:10px">diagram</span></div><div class="card chord">G<span class="mu" style="font-size:10px">diagram</span></div><div class="card chord">Em<span class="mu" style="font-size:10px">diagram</span></div></div>
+<div class="tab"><span>▦<br>Dashboard</span><span class="on">♫<br>Practice</span><span>◔<br>Tools</span></div></div><figcaption>3. Practice tab (landing)</figcaption></figure>
+
+<figure><div class="ph" style="padding-bottom:8px">
+<div class="row sp"><span>‹</span><span class="b">Chord G</span><span class="mu">··</span></div>
+<div class="row" style="margin:8px 0;justify-content:center"><span class="chip">✓ Guitar</span><span class="chip">✓ Fretboard</span><span class="chip">○ Hands</span></div>
+<div class="box" style="flex:1;position:relative;flex-direction:column;gap:6px">Camera preview<div class="row"><span class="dot" style="background:var(--g)">1✓</span><span class="dot" style="background:var(--r)">2✕</span><span class="dot" style="background:var(--g)">3✓</span></div>
+<div style="position:absolute;right:6px;top:6px;width:50px;height:50px;border-radius:50%;border:3px solid var(--ac);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px">--%</div></div>
+<div class="card" style="margin:8px 0 0;background:#1c1c1ecc">Move your 2nd finger to the 3rd fret</div></div><figcaption>4. Live practice (camera, no tab bar)</figcaption></figure>
+
+<figure><div class="ph">
+<div class="row sp" style="margin-top:4px"><div class="row"><div class="box" style="width:24px;height:24px">L</div><span class="b">App Name</span></div><span>◯</span></div>
+<div class="row sp" style="margin-top:8px"><span class="b">Lessons</span><span style="color:var(--ac)">See All</span></div>
+<div class="card" style="height:130px"><div class="b">Your First Chord</div><div class="mu">Lesson 2 of 6</div><div class="pb" style="margin-top:8px"><i style="width:35%"></i></div></div>
+<div class="card" style="height:40px"><div class="b">Strumming Basics</div><div class="mu">Not started</div></div>
+<div class="b" style="margin:2px 0 4px">Progress</div>
+<div class="card row"><div class="ring">40%</div><div class="mu">Lessons completed</div></div>
+<div class="card row sp"><div><div class="mu">Continue practice</div><div class="b">Chord G</div></div><span style="color:var(--ac)">▶</span></div>
+<div class="tab"><span class="on">▦<br>Dashboard</span><span>♫<br>Practice</span><span>◔<br>Tools</span></div></div><figcaption>5. Dashboard (lessons ~55%)</figcaption></figure>
+
+<figure><div class="ph">
+<div class="lt">Tools</div>
+<div class="row" style="justify-content:center;margin-bottom:6px"><span class="chip" style="background:var(--s2)">Tuner</span><span class="chip">Metronome</span></div>
+<div class="c" style="font-size:58px;font-weight:700;margin-top:30px">E</div>
+<div class="c mu">String 6 · 82.4 Hz</div>
+<div class="box" style="height:60px;margin:26px 6px;position:relative">♭ &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; ♯<i style="position:absolute;left:50%;top:6px;bottom:6px;width:3px;background:var(--g)"></i></div>
+<div class="c" style="color:var(--g)">In tune</div>
+<div class="tab"><span>▦<br>Dashboard</span><span>♫<br>Practice</span><span class="on">◔<br>Tools</span></div></div><figcaption>6a. Tools: Tuner (default)</figcaption></figure>
+
+<figure><div class="ph">
+<div class="lt">Tools</div>
+<div class="row" style="justify-content:center;margin-bottom:6px"><span class="chip">Tuner</span><span class="chip" style="background:var(--s2)">Metronome</span></div>
+<div class="c" style="font-size:58px;font-weight:700;margin-top:18px">96</div>
+<div class="c mu">BPM</div>
+<div class="row" style="justify-content:center;margin:14px 0"><span class="dot" style="background:var(--s2);color:#fff">−</span><div class="pb" style="width:110px"><i style="width:45%"></i></div><span class="dot" style="background:var(--s2);color:#fff">+</span></div>
+<div class="row" style="justify-content:center"><span class="dot" style="background:var(--ac)"></span><span class="dot" style="background:var(--s2)"></span><span class="dot" style="background:var(--s2)"></span><span class="dot" style="background:var(--s2)"></span></div>
+<div class="dot" style="background:var(--ac);width:56px;height:56px;margin:18px auto 0;font-size:20px">▶</div>
+<div class="tab"><span>▦<br>Dashboard</span><span>♫<br>Practice</span><span class="on">◔<br>Tools</span></div></div><figcaption>6b. Tools: Metronome (swipe)</figcaption></figure>
+
+<figure><div class="ph">
+<div class="row sp"><span class="mu">Done</span><span class="b">Profile</span><span></span></div>
+<div class="box" style="width:64px;height:64px;border-radius:50%;margin:14px auto 6px">Avatar</div>
+<div class="c b" style="margin-bottom:12px">Name</div>
+<div class="card row sp"><span>Name</span><span class="mu">›</span></div>
+<div class="card row sp"><span>Preferences</span><span class="mu">›</span></div>
+<div class="card row sp"><span>Reset progress</span><span class="mu">›</span></div>
+<div class="card row sp"><span>About and privacy</span><span class="mu">›</span></div></div><figcaption>7. Profile (sheet from Dashboard)</figcaption></figure>
+
+</div></div></body></html>
