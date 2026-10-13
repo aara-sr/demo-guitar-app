@@ -66,6 +66,17 @@ body{display:grid;place-items:center;overflow:hidden;user-select:none}
 .lesson-carousel{display:flex;flex-direction:column;gap:12px;margin-top:12px}
 .lesson-card{padding:14px}
 .lesson-art{background:linear-gradient(135deg,#dbe8d9,#f2eadc);border-radius:12px;padding:12px;font-weight:800;letter-spacing:0.08em;color:var(--forest);margin-bottom:14px}
+.lesson-player-view{padding-bottom:110px}
+.lesson-player-view .nav{margin-bottom:18px}
+.lesson-player-view .title-2{margin-top:20px}
+.lesson-player-view .btn{font-weight:700}
+.video{height:210px;border-radius:20px;background:linear-gradient(135deg,#86a18e,#244a3c);display:grid;place-items:center;color:var(--ivory);margin-bottom:18px}
+.video-play{font-size:34px;line-height:1}
+.progress-screen{padding-bottom:110px}
+.progress-summary{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.ring.large{width:72px;height:72px}.ring.large strong{width:56px;height:56px;font-size:14px}
+.progress-heading{margin:0 0 10px}
+.chord-time-list{gap:8px}.chord-time-list .group-row{padding:14px 16px}.chord-time-list span{display:flex;flex-direction:column;gap:3px}.chord-time-list small{display:block}
 .ring{width:56px;height:56px;border-radius:50%;background:conic-gradient(var(--forest) 0 40%,rgba(36,74,60,.08) 40% 100%);display:grid;place-items:center}
 .ring strong{width:42px;height:42px;border-radius:50%;background:var(--ivory);display:grid;place-items:center}
 .live{height:100%;position:relative;overflow:hidden;background:linear-gradient(180deg,#b7c8b7 0%,#7d9381 25%,#5d7b69 62%,#244a3c 100%)}
